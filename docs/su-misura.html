@@ -3,13 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% block title %}Maspes Piante e Fiori — Fiorista a Como dal 1954{% endblock %}</title>
-    {% if meta_description is defined %}
-        <meta name="description" content="{{ meta_description }}">
-    {% else %}
-        <meta name="description" content="Maspes Piante e Fiori, fioraio a Como dal 1954. Rose, bouquet, piante, orchidee e composizioni floreali. Consegna a domicilio a Como e provincia.">
-    {% endif %}
-    <meta property="og:title" content="Maspes Piante e Fiori">
+    <title>Su misura · Composizioni per matrimoni, eventi e funerali · Maspes Piante e Fiori</title>
+            <meta name="description" content="Maspes Piante e Fiori, fioraio a Como dal 1954. Rose, bouquet, piante, orchidee e composizioni floreali. Consegna a domicilio a Como e provincia.">
+        <meta property="og:title" content="Maspes Piante e Fiori">
     <meta property="og:description" content="Fioraio a Como dal 1954, consegna in giornata.">
     <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1176,28 +1172,27 @@
             .card:hover .card__img { transform: none; }
         }
     </style>
-    {% block head %}{% endblock %}
-</head>
-<body{% if body_class is defined %} class="{{ body_class }}"{% endif %}>
+    </head>
+<body>
 
-    <a class="visually-hidden" href="#main" style="position:absolute;left:-9999px;">Salta al contenuto</a>
+    <a class="visually-hidden" href="su-misura.html#main" style="position:absolute;left:-9999px;">Salta al contenuto</a>
 
     <header class="site-header" id="site-header">
         <div class="container site-header__inner">
-            <a class="logo" href="/">
+            <a class="logo" href="index.html">
                 <span class="logo__primary">Maspes</span>
                 <span class="logo__sub">Piante e Fiori</span>
             </a>
             <nav aria-label="Principale">
                 <ul class="site-header__nav">
-                    <li><a href="/catalogo"{% if current_page == 'catalogo' %} aria-current="page"{% endif %}>Catalogo</a></li>
-                    <li><a href="/su-misura"{% if current_page == 'su-misura' %} aria-current="page"{% endif %}>Su misura</a></li>
-                    <li><a href="/contatti"{% if current_page == 'contatti' %} aria-current="page"{% endif %}>Contatti</a></li>
+                    <li><a href="catalogo.html">Catalogo</a></li>
+                    <li><a href="su-misura.html" aria-current="page">Su misura</a></li>
+                    <li><a href="contatti.html">Contatti</a></li>
                 </ul>
             </nav>
             <div class="site-header__right">
                 <a class="site-header__phone" href="tel:+390312711360">031 27 11 36</a>
-                <a class="btn btn--primary" href="/catalogo">Ordina ora</a>
+                <a class="btn btn--primary" href="catalogo.html">Ordina ora</a>
                 <button class="hamburger" type="button" aria-label="Apri menu" aria-expanded="false" aria-controls="mobile-nav" id="hamburger">
                     <span></span><span></span><span></span>
                 </button>
@@ -1208,16 +1203,184 @@
     <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
         <button class="mobile-nav__close" type="button" aria-label="Chiudi menu" id="mobile-close">Chiudi</button>
         <ul class="mobile-nav__list">
-            <li><a href="/">Home</a></li>
-            <li><a href="/catalogo">Catalogo</a></li>
-            <li><a href="/su-misura">Su misura</a></li>
-            <li><a href="/contatti">Contatti</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catalogo.html">Catalogo</a></li>
+            <li><a href="su-misura.html">Su misura</a></li>
+            <li><a href="contatti.html">Contatti</a></li>
         </ul>
         <a class="mobile-nav__phone" href="tel:+390312711360">Chiama 031 27 11 36</a>
     </div>
 
     <main id="main">
-        {% block content %}{% endblock %}
+        
+<section class="hero hero--half" aria-label="Composizioni su misura">
+    <div class="hero__media" style="background-image:url('uploads/sumisura/hero/wedding_bouquet_white_roses_jpg.jpg');"></div>
+    <div class="hero__gradient" aria-hidden="true"></div>
+    <div class="container hero__inner">
+        <span class="hero__eyebrow">Su misura</span>
+        <h1 class="hero__title" style="font-size:clamp(2.25rem,5vw,3rem);">Composizioni per i <em>momenti che contano.</em></h1>
+        <p class="hero__sub">
+            Matrimoni, eventi e funerali sono conversazioni diverse — e le trattiamo
+            tutte e tre con la stessa cura. Raccontaci l'occasione, pensiamo noi al resto.
+        </p>
+    </div>
+</section>
+
+<section class="section" aria-label="I tre ambiti">
+    <div class="container">
+
+        <article class="ambito">
+            <div class="ambito__media" style="background-image:url('uploads/sumisura/matrimoni/bride_holding_a_wedding_bouquet__facing_front__three_quarter.jpg');" role="img" aria-label="Sposa con bouquet"></div>
+            <div class="ambito__copy">
+                <span class="eyebrow eyebrow--muted">01 — Matrimoni</span>
+                <h2 style="margin-top:14px;"><em>Matrimoni.</em></h2>
+                <p>
+                    Dal bouquet della sposa al banco di chiesa, dall'allestimento del ricevimento al lancio finale.
+                    Lavoriamo per matrimoni a Como, sul lago e in tutta la provincia — partendo dai colori che hai in testa,
+                    non da un pacchetto.
+                </p>
+                <p style="margin-top:12px;">Sopralluogo della location compreso, su richiesta.</p>
+            </div>
+        </article>
+
+        <article class="ambito ambito--reverse">
+            <div class="ambito__media" style="background-image:url('uploads/sumisura/eventi/dinner_table_accessories_jpg.jpg');" role="img" aria-label="Centrotavola per evento"></div>
+            <div class="ambito__copy">
+                <span class="eyebrow eyebrow--muted">02 — Eventi e cerimonie</span>
+                <h2 style="margin-top:14px;"><em>Eventi</em> e cerimonie.</h2>
+                <p>
+                    Battesimi, cresime, lauree, anniversari importanti. Cene private, aperture di negozio,
+                    pranzi aziendali. Pensiamo composizioni che durino una serata e che chi siede a tavola
+                    si ricordi — senza che diventino il centro dell'attenzione.
+                </p>
+                <p style="margin-top:12px;">Consegna e ritiro inclusi nel preventivo.</p>
+            </div>
+        </article>
+
+        <article class="ambito ambito--mute">
+            <div class="ambito__media" style="background-image:url('uploads/sumisura/funerali/city_of_london_cemetery_and_crematorium___floral_tribute___w.jpg');" role="img" aria-label="Tributo floreale bianco"></div>
+            <div class="ambito__copy">
+                <span class="eyebrow eyebrow--muted">03 — Funerali e cordoglio</span>
+                <h2 style="margin-top:14px;"><em>Funerali</em> e cordoglio.</h2>
+                <p>
+                    Cuscini, corone, tributi, mazzi di cordoglio. Consegnamo direttamente in chiesa,
+                    al commiato o all'indirizzo che ci indichi, anche con poche ore di preavviso.
+                    Una telefonata è sufficiente — capiamo noi cosa serve.
+                </p>
+                <p style="margin-top:12px;">Risposta entro un'ora negli orari del negozio.</p>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<section class="section section--calce-deep section--tight" aria-label="Come funziona">
+    <div class="container">
+        <div style="max-width:520px;margin:0 auto 32px;text-align:center;">
+            <span class="eyebrow eyebrow--bosco">Come funziona</span>
+            <h2 style="margin-top:14px;">Tre passaggi, <em>nessuna sorpresa.</em></h2>
+        </div>
+        <div class="steps">
+            <div class="step">
+                <p class="step__num">01</p>
+                <h3>Ci scrivi o ci chiami.</h3>
+                <p>Compila il modulo qui sotto o telefona al negozio. Ti rispondiamo entro un'ora negli orari di apertura.</p>
+            </div>
+            <div class="step">
+                <p class="step__num">02</p>
+                <h3>Concordiamo il preventivo.</h3>
+                <p>Ti proponiamo composizioni, materiali e budget. Niente parte finché non sei d'accordo.</p>
+            </div>
+            <div class="step">
+                <p class="step__num">03</p>
+                <h3>Consegniamo.</h3>
+                <p>Nel giorno e nel luogo che ci hai indicato, a mano. Restiamo reperibili anche dopo, se serve.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" aria-label="Modulo di richiesta">
+    <div class="container">
+        <div style="max-width:640px;margin:0 auto 48px;text-align:center;">
+            <span class="eyebrow eyebrow--bosco">Modulo di richiesta</span>
+            <h2 style="margin-top:14px;"><em>Raccontaci</em> l'occasione.</h2>
+            <p style="color:var(--inchiostro-soft);margin-top:16px;font-size:1rem;">
+                Compila i campi qui sotto: ti rispondiamo a mano, di persona, dal negozio.
+            </p>
+        </div>
+
+                <form class="form" action="https://formspree.io/f/REPLACE_ME" method="POST" novalidate>
+            <div class="form__row">
+                <div class="form__field">
+                    <label for="f-nome">Nome</label>
+                    <input id="f-nome" type="text" name="nome" required autocomplete="name">
+                </div>
+                <div class="form__field">
+                    <label for="f-telefono">Telefono</label>
+                    <input id="f-telefono" type="tel" name="telefono" required autocomplete="tel" inputmode="tel">
+                </div>
+            </div>
+
+            <div class="form__field">
+                <label for="f-email">Email</label>
+                <input id="f-email" type="email" name="email" required autocomplete="email">
+            </div>
+
+            <div class="form__row">
+                <div class="form__field">
+                    <label for="f-occasione">Occasione</label>
+                    <select id="f-occasione" name="occasione" required>
+                        <option value="" disabled selected>Seleziona…</option>
+                        <option value="matrimonio">Matrimonio</option>
+                        <option value="evento">Evento o cerimonia</option>
+                        <option value="funerale">Funerale / cordoglio</option>
+                        <option value="altro">Altro</option>
+                    </select>
+                </div>
+                <div class="form__field">
+                    <label for="f-data">Data desiderata</label>
+                    <input id="f-data" type="date" name="data_desiderata">
+                </div>
+            </div>
+
+            <div class="form__field">
+                <label for="f-budget">Budget indicativo (opzionale)</label>
+                <input id="f-budget" type="text" name="budget" placeholder="Es. 300–500 €">
+            </div>
+
+            <div class="form__field">
+                <label for="f-messaggio">Messaggio</label>
+                <textarea id="f-messaggio" name="messaggio" required placeholder="Raccontaci di più — chi riceve, dove consegnare, eventuali preferenze di colore o fiori da evitare."></textarea>
+            </div>
+
+            <div class="form__honeypot" aria-hidden="true">
+                <label for="f-hp">Lascia vuoto</label>
+                <input id="f-hp" type="text" name="_hp" tabindex="-1" autocomplete="off">
+            </div>
+
+            <div class="form__actions">
+                <button type="submit" class="btn btn--primary">Invia richiesta</button>
+                <p class="form__fallback">
+                    Preferisci sentirci subito? <a href="tel:+390312711360">Chiama 031 27 11 36</a> — risponde il negozio negli orari di apertura.
+                </p>
+            </div>
+        </form>
+    </div>
+</section>
+
+<section class="cta-band" aria-label="Chiama il negozio">
+    <div class="container">
+        <h2 style="max-width:24ch;margin:0 auto 8px;">
+            <em>Preferisci</em> sentirci subito?
+        </h2>
+        <p style="font-family:'Inter',sans-serif;font-size:1.0625rem;color:var(--calce);opacity:0.92;max-width:48ch;margin:0 auto 32px;">
+            Chiama il negozio — risponde una persona, negli orari di apertura.
+        </p>
+        <a class="btn btn--ghost-light" href="tel:+390312711360" style="font-variant-numeric:tabular-nums;">031 27 11 36</a>
+    </div>
+</section>
+
     </main>
 
     <footer class="site-footer">
@@ -1256,7 +1419,7 @@
                 <span>Maspes Piante e Fiori di Maspes &amp; C. — S.N.C.</span>
                 <span>P.IVA 01558540132</span>
                 <span>PEC <a href="mailto:maspespiantefiori@pecpostasicura.it">maspespiantefiori@pecpostasicura.it</a></span>
-                <span style="margin-left:auto;">© {{ "now"|date('Y') }} Maspes</span>
+                <span style="margin-left:auto;">© 2026 Maspes</span>
             </div>
         </div>
     </footer>

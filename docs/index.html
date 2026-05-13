@@ -3,13 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% block title %}Maspes Piante e Fiori — Fiorista a Como dal 1954{% endblock %}</title>
-    {% if meta_description is defined %}
-        <meta name="description" content="{{ meta_description }}">
-    {% else %}
-        <meta name="description" content="Maspes Piante e Fiori, fioraio a Como dal 1954. Rose, bouquet, piante, orchidee e composizioni floreali. Consegna a domicilio a Como e provincia.">
-    {% endif %}
-    <meta property="og:title" content="Maspes Piante e Fiori">
+    <title>Maspes Piante e Fiori — Fiorista a Como dal 1954, consegna in giornata</title>
+            <meta name="description" content="Maspes Piante e Fiori, fioraio a Como dal 1954. Rose, bouquet, piante, orchidee e composizioni floreali. Consegna a domicilio a Como e provincia.">
+        <meta property="og:title" content="Maspes Piante e Fiori">
     <meta property="og:description" content="Fioraio a Como dal 1954, consegna in giornata.">
     <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1176,28 +1172,27 @@
             .card:hover .card__img { transform: none; }
         }
     </style>
-    {% block head %}{% endblock %}
-</head>
-<body{% if body_class is defined %} class="{{ body_class }}"{% endif %}>
+    </head>
+<body>
 
-    <a class="visually-hidden" href="#main" style="position:absolute;left:-9999px;">Salta al contenuto</a>
+    <a class="visually-hidden" href="index.html#main" style="position:absolute;left:-9999px;">Salta al contenuto</a>
 
     <header class="site-header" id="site-header">
         <div class="container site-header__inner">
-            <a class="logo" href="/">
+            <a class="logo" href="index.html">
                 <span class="logo__primary">Maspes</span>
                 <span class="logo__sub">Piante e Fiori</span>
             </a>
             <nav aria-label="Principale">
                 <ul class="site-header__nav">
-                    <li><a href="/catalogo"{% if current_page == 'catalogo' %} aria-current="page"{% endif %}>Catalogo</a></li>
-                    <li><a href="/su-misura"{% if current_page == 'su-misura' %} aria-current="page"{% endif %}>Su misura</a></li>
-                    <li><a href="/contatti"{% if current_page == 'contatti' %} aria-current="page"{% endif %}>Contatti</a></li>
+                    <li><a href="catalogo.html">Catalogo</a></li>
+                    <li><a href="su-misura.html">Su misura</a></li>
+                    <li><a href="contatti.html">Contatti</a></li>
                 </ul>
             </nav>
             <div class="site-header__right">
                 <a class="site-header__phone" href="tel:+390312711360">031 27 11 36</a>
-                <a class="btn btn--primary" href="/catalogo">Ordina ora</a>
+                <a class="btn btn--primary" href="catalogo.html">Ordina ora</a>
                 <button class="hamburger" type="button" aria-label="Apri menu" aria-expanded="false" aria-controls="mobile-nav" id="hamburger">
                     <span></span><span></span><span></span>
                 </button>
@@ -1208,16 +1203,239 @@
     <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
         <button class="mobile-nav__close" type="button" aria-label="Chiudi menu" id="mobile-close">Chiudi</button>
         <ul class="mobile-nav__list">
-            <li><a href="/">Home</a></li>
-            <li><a href="/catalogo">Catalogo</a></li>
-            <li><a href="/su-misura">Su misura</a></li>
-            <li><a href="/contatti">Contatti</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catalogo.html">Catalogo</a></li>
+            <li><a href="su-misura.html">Su misura</a></li>
+            <li><a href="contatti.html">Contatti</a></li>
         </ul>
         <a class="mobile-nav__phone" href="tel:+390312711360">Chiama 031 27 11 36</a>
     </div>
 
     <main id="main">
-        {% block content %}{% endblock %}
+        
+<section class="hero" aria-label="Maspes Piante e Fiori — fioraio a Como dal 1954">
+    <div class="hero__media" style="background-image:url('uploads/heroes/bouquet_of_red_roses_jpg.jpg');"></div>
+    <div class="hero__gradient" aria-hidden="true"></div>
+    <div class="container hero__inner">
+        <span class="hero__eyebrow">Fioraio in Como dal 1954</span>
+        <h1 class="hero__title">Fioraio a Como, <em>consegna in giornata.</em></h1>
+        <p class="hero__sub">
+            Rose, bouquet, piante e composizioni su misura dal nostro negozio in Via Leone Leoni —
+            ordina online o chiamaci per un preventivo personalizzato.
+        </p>
+        <div class="hero__ctas">
+            <a class="btn btn--primary" href="catalogo.html">Ordina ora</a>
+            <a class="btn btn--secondary" href="tel:+390312711360">Chiama 031 27 11 36</a>
+        </div>
+    </div>
+</section>
+
+<section class="section section--tight" aria-label="Le nostre promesse">
+    <div class="container">
+        <div class="promesse">
+            <div class="promessa">
+                <hr class="rule" aria-hidden="true">
+                <h3>Consegna in giornata</h3>
+                <p>Portiamo fiori e composizioni a Como e provincia, gli ordini ricevuti entro mattina arrivano in giornata.</p>
+            </div>
+            <div class="promessa">
+                <hr class="rule" aria-hidden="true">
+                <h3>Composizioni su misura</h3>
+                <p>Bouquet, centrotavola, omaggi e tributi pensati per l'occasione e per chi li riceve, non per un catalogo.</p>
+            </div>
+            <div class="promessa">
+                <hr class="rule" aria-hidden="true">
+                <h3>Una bottega di famiglia</h3>
+                <p>Dal 1954 la stessa famiglia, lo stesso negozio in Via Leone Leoni. Veniteci a trovare, anche solo per chiacchierare.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" aria-label="Cosa facciamo">
+    <div class="container">
+        <div class="two-col" style="margin-bottom:56px;">
+            <div>
+                <span class="eyebrow eyebrow--bosco">Cosa facciamo</span>
+            </div>
+            <div class="prose">
+                <h2 style="margin-bottom:16px;">Ogni giorno, in bottega.</h2>
+                <p>Quello che esce dalle nostre mani non è mai uguale al giorno prima — ma queste sono le composizioni che ci chiedete di più.</p>
+            </div>
+        </div>
+
+        <div class="card-grid card-grid--five">
+            <a class="card" href="catalogo.html#rose">
+                <div class="card__media">
+                    <img class="card__img" src="uploads/categories/rose/close_up_of_a_red_rose_in_pennsylvania_jpg.jpg" alt="Rosa rossa fresca, primo piano" loading="lazy">
+                </div>
+                <p class="card__eyebrow">Rose</p>
+                <h3 class="card__title"><em>Rose</em> rosse e di stagione</h3>
+                <p class="card__summary">Steli singoli, mazzi da 6 fino a 100. Il nostro classico.</p>
+                <span class="card__cta">Vedi le rose →</span>
+            </a>
+
+            <a class="card" href="catalogo.html#bouquet">
+                <div class="card__media">
+                    <img class="card__img" src="uploads/categories/bouquet/lille_pdba_delacroix_bouquet_jpg.jpg" alt="Bouquet di fiori misti, natura morta" loading="lazy">
+                </div>
+                <p class="card__eyebrow">Bouquet</p>
+                <h3 class="card__title">Bouquet</h3>
+                <p class="card__summary">Mazzi composti su misura per ogni momento.</p>
+                <span class="card__cta">Scopri →</span>
+            </a>
+
+            <a class="card" href="catalogo.html#piante">
+                <div class="card__media">
+                    <img class="card__img" src="uploads/categories/piante/epipremnum_aureum__marble_queen__houseplant__cropped__png.png" alt="Pianta da appartamento in vaso di terracotta" loading="lazy">
+                </div>
+                <p class="card__eyebrow">Piante</p>
+                <h3 class="card__title">Piante</h3>
+                <p class="card__summary">Verdi da interno, fiorite da regalo.</p>
+                <span class="card__cta">Scopri →</span>
+            </a>
+
+            <a class="card" href="catalogo.html#orchidee">
+                <div class="card__media">
+                    <img class="card__img" src="uploads/categories/orchidee/phalaenopsis_white_cultivar_2_jpg.jpg" alt="Orchidea Phalaenopsis bianca" loading="lazy">
+                </div>
+                <p class="card__eyebrow">Orchidee</p>
+                <h3 class="card__title">Orchidee</h3>
+                <p class="card__summary">Phalaenopsis e cultivar selezionate.</p>
+                <span class="card__cta">Scopri →</span>
+            </a>
+
+            <a class="card" href="catalogo.html#composizioni">
+                <div class="card__media">
+                    <img class="card__img" src="uploads/categories/composizioni/severin_roesen___floral_arrangement_in_a_glass_vase_on_a_clo.jpg" alt="Composizione floreale in vaso, natura morta" loading="lazy">
+                </div>
+                <p class="card__eyebrow">Composizioni</p>
+                <h3 class="card__title">Composizioni</h3>
+                <p class="card__summary">Centrotavola, omaggi, tributi. Su misura.</p>
+                <span class="card__cta">Scopri →</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="section section--calce-deep" aria-label="La nostra storia">
+    <div class="container">
+        <div class="heritage">
+            <div class="heritage__media" role="img" aria-label="Interno di una bottega di fiori d'epoca"
+                 style="background-image:url('uploads/heritage/the_american_florist___a_weekly_journal_for_the_trade__1910_.jpg');">
+            </div>
+            <div class="heritage__copy">
+                <span class="eyebrow eyebrow--muted">La nostra storia</span>
+                <h2 style="margin-top:16px;"><em>Dal 1954,</em><br>la stessa bottega.</h2>
+                <p>Maspes Piante e Fiori è nata nel 1954 in Via Leone Leoni, a due passi dal cuore di Como. Tre generazioni dopo siamo ancora qui, dietro lo stesso bancone, con le stesse mani.</p>
+                <p>Conosciamo i nostri clienti per nome e ricordiamo i compleanni — anche quelli che vorrebbero dimenticarli. Facciamo fiori per matrimoni, per funerali, per scuse importanti e per un giovedì qualunque. È la nostra giornata, da settant'anni.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" aria-label="Cosa dicono di noi">
+    <div class="container">
+        <div style="margin-bottom:48px; max-width:48ch;">
+            <span class="eyebrow eyebrow--bosco">Dicono di noi</span>
+            <h2 style="margin-top:16px;">Il giudizio che <em>conta</em> davvero.</h2>
+        </div>
+        <div class="testimonials">
+            <article class="testimonial">
+                <div class="testimonial__mark" aria-hidden="true">“</div>
+                <p class="testimonial__quote">Il fiorista top di Como. Se volete la qualità, sia per richieste particolari che per una semplice rosa, andate da Maspes — non vi deluderà.</p>
+                <hr class="testimonial__rule" aria-hidden="true">
+                <p class="testimonial__author">Jacopo Zuppati</p>
+                <p class="testimonial__occasion">Cliente</p>
+            </article>
+            <article class="testimonial">
+                <div class="testimonial__mark" aria-hidden="true">“</div>
+                <p class="testimonial__quote">Fiori di rara bellezza e qualità. Personale gentilissimo, sempre pronto a un consiglio.</p>
+                <hr class="testimonial__rule" aria-hidden="true">
+                <p class="testimonial__author">Barbara Bertolini</p>
+                <p class="testimonial__occasion">Cliente</p>
+            </article>
+            <article class="testimonial">
+                <div class="testimonial__mark" aria-hidden="true">“</div>
+                <p class="testimonial__quote">Grande, grandissima professionalità — e composizioni bellissime e raffinate, ogni volta.</p>
+                <hr class="testimonial__rule" aria-hidden="true">
+                <p class="testimonial__author">Chiara Vincenzi</p>
+                <p class="testimonial__occasion">Cliente</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="band-overlay" aria-label="Occasioni speciali">
+    <div class="band-overlay__media" style="background-image:url('uploads/heroes/occasioni/statelibqld_1_95512_wedding_of_alma_shepherd_and_frank_west_.jpg');" aria-hidden="true"></div>
+    <div class="band-overlay__inner">
+        <h2>Per i <em>momenti che contano.</em></h2>
+        <p>Matrimoni, eventi e funerali sono conversazioni diverse — e le trattiamo tutte e tre con la stessa cura. Raccontaci l'occasione, pensiamo noi al resto.</p>
+        <a class="btn btn--ghost-light" href="su-misura.html">Richiedi un preventivo</a>
+    </div>
+</section>
+
+<section class="section" aria-label="Visita la bottega">
+    <div class="container">
+        <div class="visita">
+            <div class="visita__map" aria-label="Mappa illustrata di Via Leone Leoni 2, Como">
+                <svg viewBox="0 0 600 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mappa schematica di Via Leone Leoni 2, Como">
+                    <rect width="600" height="520" fill="#F6F1E7"/>
+                    <!-- Lake hint (Lago di Como, top-left) -->
+                    <path d="M -20 60 Q 80 30 160 70 Q 200 90 170 130 Q 90 160 0 140 Z" fill="#E8E1D0" opacity="0.7"/>
+                    <text x="40" y="100" font-family="Fraunces, serif" font-style="italic" font-size="14" fill="#A39A8B">Lago di Como</text>
+
+                    <!-- Streets -->
+                    <g stroke="#A39A8B" stroke-width="1" fill="none">
+                        <path d="M 0 220 L 600 200" />
+                        <path d="M 0 340 L 600 320" />
+                        <path d="M 120 0 L 140 520" />
+                        <path d="M 320 0 L 340 520" />
+                        <path d="M 470 0 L 480 520" />
+                        <path d="M 200 240 L 460 270" />
+                    </g>
+                    <g stroke="#A39A8B" stroke-width="0.5" fill="none" opacity="0.6">
+                        <path d="M 0 140 L 600 130" />
+                        <path d="M 0 420 L 600 410" />
+                        <path d="M 240 0 L 250 520" />
+                        <path d="M 400 0 L 410 520" />
+                    </g>
+
+                    <!-- Street labels -->
+                    <text x="220" y="195" font-family="Inter, sans-serif" font-size="9" letter-spacing="2" fill="#A39A8B">VIA INDIPENDENZA</text>
+                    <text x="220" y="335" font-family="Inter, sans-serif" font-size="9" letter-spacing="2" fill="#A39A8B">VIA CESARE CANTÙ</text>
+                    <text x="320" y="262" font-family="Fraunces, serif" font-style="italic" font-size="13" fill="#1F1A17">Via Leone Leoni</text>
+
+                    <!-- Marker -->
+                    <circle cx="335" cy="265" r="22" fill="#B25A5A" fill-opacity="0.18"/>
+                    <circle cx="335" cy="265" r="6" fill="#B25A5A"/>
+                    <line x1="335" y1="265" x2="335" y2="290" stroke="#B25A5A" stroke-width="1"/>
+
+                    <text x="350" y="295" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#1F1A17" letter-spacing="2">MASPES</text>
+                    <text x="350" y="310" font-family="Inter, sans-serif" font-size="9" fill="#A39A8B" letter-spacing="1">Via Leone Leoni, 2</text>
+                </svg>
+            </div>
+            <div class="visita__copy">
+                <span class="eyebrow eyebrow--muted">Vieni a trovarci</span>
+                <h3 style="margin-top:14px;">Via Leone Leoni 2, <em>Como.</em></h3>
+                <address>
+                    22100 Como (CO)<br>
+                    Italia
+                </address>
+                <ul class="visita__hours">
+                    <li><span class="day">Lun–Ven</span><span>8:00–13:00 / 15:00–19:30</span></li>
+                    <li><span class="day">Sabato</span><span>8:00–13:00 / 14:30–19:30</span></li>
+                    <li><span class="day">Domenica</span><span>9:00–13:00</span></li>
+                </ul>
+                <p style="font-size:0.9375rem;color:var(--inchiostro-soft);margin-bottom:24px;">
+                    Telefono: <a class="tabular" href="tel:+390312711360">031 27 11 36</a>
+                </p>
+                <a class="btn btn--secondary" href="https://www.google.com/maps/search/?api=1&query=Via+Leone+Leoni+2+Como" target="_blank" rel="noopener">Indicazioni</a>
+            </div>
+        </div>
+    </div>
+</section>
+
     </main>
 
     <footer class="site-footer">
@@ -1256,7 +1474,7 @@
                 <span>Maspes Piante e Fiori di Maspes &amp; C. — S.N.C.</span>
                 <span>P.IVA 01558540132</span>
                 <span>PEC <a href="mailto:maspespiantefiori@pecpostasicura.it">maspespiantefiori@pecpostasicura.it</a></span>
-                <span style="margin-left:auto;">© {{ "now"|date('Y') }} Maspes</span>
+                <span style="margin-left:auto;">© 2026 Maspes</span>
             </div>
         </div>
     </footer>

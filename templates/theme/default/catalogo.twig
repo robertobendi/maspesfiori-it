@@ -1,0 +1,318 @@
+{% extends '@theme/layout.twig' %}
+
+{% set current_page = 'catalogo' %}
+
+{% block title %}Catalogo · Maspes Piante e Fiori{% endblock %}
+
+{% block content %}
+
+{# ---------- INTRO BAND ---------- #}
+<section class="page-intro" aria-label="Catalogo">
+    <div class="container">
+        <div class="page-intro__eyebrow"><span class="eyebrow eyebrow--bosco">Catalogo</span></div>
+        <h1>Le composizioni che facciamo <em>ogni giorno</em> in bottega.</h1>
+        <p class="page-intro__lede">
+            Per ordinare, chiamaci o scrivici — consegniamo a Como e provincia in giornata.
+            I prezzi qui sotto sono indicativi: per quantità, varianti o composizioni su misura, il preventivo è gratuito.
+        </p>
+    </div>
+</section>
+
+{# ---------- FILTER STRIP ---------- #}
+<nav class="catalog-filters" aria-label="Filtra per categoria">
+    <div class="container">
+        <ul class="catalog-filters__list">
+            <li><a href="#tutti" class="is-active">Tutti</a></li>
+            <li><a href="#rose">Rose</a></li>
+            <li><a href="#bouquet">Bouquet</a></li>
+            <li><a href="#piante">Piante</a></li>
+            <li><a href="#orchidee">Orchidee</a></li>
+            <li><a href="#composizioni">Composizioni</a></li>
+        </ul>
+    </div>
+</nav>
+
+{# ---------- ROSE ---------- #}
+<section class="section" id="rose" aria-label="Rose">
+    <div class="container">
+        <header style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;margin-bottom:48px;flex-wrap:wrap;">
+            <div>
+                <span class="eyebrow eyebrow--muted">01 — Rose</span>
+                <h2 style="margin-top:14px;">Le nostre <em>rose rosse.</em></h2>
+            </div>
+            <p style="max-width:36ch;color:var(--inchiostro-soft);font-size:0.9375rem;margin:0;">
+                Confezionate a mano, in carta o in scatola. Gli ordini ricevuti entro mattina partono in giornata.
+            </p>
+        </header>
+
+        <div class="card-grid card-grid--catalog">
+            <article class="card">
+                <div class="card__media">
+                    <img class="card__img" src="/uploads/categories/rose/close_up_of_a_red_rose_in_pennsylvania_jpg.jpg" alt="Rosa rossa singola" loading="lazy">
+                </div>
+                <p class="card__eyebrow">Rose</p>
+                <h3 class="card__title"><em>6</em> rose rosse</h3>
+                <p class="card__summary">Sei steli, confezionati a mano in carta naturale.</p>
+                <p class="card__price">€ 42,00</p>
+                <a class="card__cta" href="tel:+390312711360">Chiama per ordinare →</a>
+            </article>
+
+            <article class="card">
+                <div class="card__media">
+                    <img class="card__img" src="/uploads/categories/rose/close_up_of_a_red_rose_in_pennsylvania_jpg.jpg" alt="Mazzo di nove rose rosse" loading="lazy">
+                </div>
+                <p class="card__eyebrow">Rose</p>
+                <h3 class="card__title"><em>9</em> rose rosse</h3>
+                <p class="card__summary">Nove steli, la nostra misura più richiesta per gli anniversari.</p>
+                <p class="card__price">€ 63,00</p>
+                <a class="card__cta" href="tel:+390312711360">Chiama per ordinare →</a>
+            </article>
+
+            <article class="card">
+                <div class="card__media">
+                    <img class="card__img" src="/uploads/heroes/bouquets_of_red_roses_jpg.jpg" alt="Mazzo di dodici rose rosse" loading="lazy">
+                </div>
+                <p class="card__eyebrow">Rose</p>
+                <h3 class="card__title"><em>12</em> rose rosse</h3>
+                <p class="card__summary">Una dozzina classica. Confezione carta naturale o scatola.</p>
+                <p class="card__price">€ 84,00</p>
+                <a class="card__cta" href="tel:+390312711360">Chiama per ordinare →</a>
+            </article>
+
+            <article class="card">
+                <div class="card__media">
+                    <img class="card__img" src="/uploads/heroes/bouquet_of_red_roses_jpg.jpg" alt="Bouquet grande di rose rosse avvolto in carta" loading="lazy">
+                </div>
+                <p class="card__eyebrow">Rose</p>
+                <h3 class="card__title"><em>24</em> rose rosse</h3>
+                <p class="card__summary">Bouquet importante, da regalare quando il momento lo è.</p>
+                <p class="card__price">€ 168,00</p>
+                <a class="card__cta" href="tel:+390312711360">Chiama per ordinare →</a>
+            </article>
+
+            <article class="card">
+                <div class="card__media">
+                    <img class="card__img" src="/uploads/heroes/bouquets_of_red_roses_jpg.jpg" alt="Composizione di cento rose rosse" loading="lazy">
+                </div>
+                <p class="card__eyebrow">Rose · Su prenotazione</p>
+                <h3 class="card__title"><em>100</em> rose rosse</h3>
+                <p class="card__summary">Per le occasioni che non vanno spiegate. Si prenota con almeno due giorni di anticipo.</p>
+                <p class="card__price">€ 700,00</p>
+                <a class="card__cta" href="tel:+390312711360">Chiama per prenotare →</a>
+            </article>
+        </div>
+    </div>
+</section>
+
+{# ---------- BOUQUET ---------- #}
+<section class="section section--calce-deep" id="bouquet" aria-label="Bouquet">
+    <div class="container">
+        <header style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;margin-bottom:48px;flex-wrap:wrap;">
+            <div>
+                <span class="eyebrow eyebrow--muted">02 — Bouquet</span>
+                <h2 style="margin-top:14px;">Mazzi <em>composti a mano.</em></h2>
+            </div>
+            <p style="max-width:36ch;color:var(--inchiostro-soft);font-size:0.9375rem;margin:0;">
+                Ogni bouquet è diverso, perché è fatto con quello che è arrivato fresco la mattina.
+            </p>
+        </header>
+
+        <div class="card-grid card-grid--catalog">
+            <article class="card">
+                <div class="card__media">
+                    <img class="card__img" src="/uploads/categories/bouquet/lille_pdba_delacroix_bouquet_jpg.jpg" alt="Bouquet di fiori misti vivace" loading="lazy">
+                </div>
+                <p class="card__eyebrow">Bouquet</p>
+                <h3 class="card__title">Bouquet vivace</h3>
+                <p class="card__summary">Mix di stagione, colori caldi. Il nostro mazzo "di tutti i giorni".</p>
+                <p class="card__price">da € 30,00</p>
+                <a class="card__cta" href="tel:+390312711360">Chiama per ordinare →</a>
+            </article>
+
+            <article class="card">
+                <div class="card__media">
+                    <img class="card__img" src="/uploads/sumisura/hero/wedding_bouquet_white_roses_jpg.jpg" alt="Bouquet di rose bianche per cerimonia" loading="lazy">
+                </div>
+                <p class="card__eyebrow">Bouquet</p>
+                <h3 class="card__title">Bouquet di rose <em>bianche</em></h3>
+                <p class="card__summary">Roselline e roses cream, per battesimi, cresime, anniversari.</p>
+                <p class="card__price">da € 55,00</p>
+                <a class="card__cta" href="tel:+390312711360">Chiama per ordinare →</a>
+            </article>
+
+            <article class="card">
+                <div class="card__media">
+                    <img class="card__img" src="/uploads/categories/composizioni/severin_roesen___floral_arrangement_in_a_glass_vase_on_a_clo.jpg" alt="Bouquet ricco di fiori di stagione" loading="lazy">
+                </div>
+                <p class="card__eyebrow">Bouquet · Su misura</p>
+                <h3 class="card__title">Bouquet <em>importante</em></h3>
+                <p class="card__summary">Composizione ricca con fiori scelti. Confezione su richiesta.</p>
+                <p class="card__price card__price--soft">su richiesta</p>
+                <a class="card__cta" href="/su-misura">Richiedi un preventivo →</a>
+            </article>
+        </div>
+    </div>
+</section>
+
+{# ---------- PIANTE ---------- #}
+<section class="section" id="piante" aria-label="Piante">
+    <div class="container">
+        <header style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;margin-bottom:48px;flex-wrap:wrap;">
+            <div>
+                <span class="eyebrow eyebrow--muted">03 — Piante</span>
+                <h2 style="margin-top:14px;">Verdi da <em>tenere a casa.</em></h2>
+            </div>
+            <p style="max-width:36ch;color:var(--inchiostro-soft);font-size:0.9375rem;margin:0;">
+                Selezione di piante da appartamento e da regalo, sempre con consigli su luce e cura.
+            </p>
+        </header>
+
+        <div class="card-grid card-grid--catalog">
+            <article class="card">
+                <div class="card__media">
+                    <img class="card__img" src="/uploads/categories/piante/epipremnum_aureum__marble_queen__houseplant__cropped__png.png" alt="Pothos Marble Queen in vaso di terracotta" loading="lazy">
+                </div>
+                <p class="card__eyebrow">Piante · Da appartamento</p>
+                <h3 class="card__title">Pothos Marble Queen</h3>
+                <p class="card__summary">Resistente, adatta a luce indiretta. Vaso in terracotta incluso.</p>
+                <p class="card__price">da € 28,00</p>
+                <a class="card__cta" href="tel:+390312711360">Chiama per ordinare →</a>
+            </article>
+
+            <article class="card">
+                <div class="card__media">
+                    <img class="card__img" src="/uploads/categories/piante/epipremnum_aureum__marble_queen__houseplant__cropped__png.png" alt="Pianta verde da appartamento" loading="lazy">
+                </div>
+                <p class="card__eyebrow">Piante · Da appartamento</p>
+                <h3 class="card__title">Selezione verdi</h3>
+                <p class="card__summary">Sansevieria, Ficus, Strelitzia — chiamaci per la disponibilità di stagione.</p>
+                <p class="card__price card__price--soft">su richiesta</p>
+                <a class="card__cta" href="tel:+390312711360">Chiama →</a>
+            </article>
+
+            <article class="card">
+                <div class="card__media">
+                    <img class="card__img" src="/uploads/categories/composizioni/severin_roesen___floral_arrangement_in_a_glass_vase_on_a_clo.jpg" alt="Pianta fiorita da regalo" loading="lazy">
+                </div>
+                <p class="card__eyebrow">Piante · Da regalo</p>
+                <h3 class="card__title">Piante <em>fiorite</em></h3>
+                <p class="card__summary">Azalee, ciclamini, ortensie — variano con la stagione.</p>
+                <p class="card__price card__price--soft">su richiesta</p>
+                <a class="card__cta" href="tel:+390312711360">Chiama →</a>
+            </article>
+        </div>
+    </div>
+</section>
+
+{# ---------- ORCHIDEE ---------- #}
+<section class="section section--calce-deep" id="orchidee" aria-label="Orchidee">
+    <div class="container">
+        <header style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;margin-bottom:48px;flex-wrap:wrap;">
+            <div>
+                <span class="eyebrow eyebrow--muted">04 — Orchidee</span>
+                <h2 style="margin-top:14px;">Phalaenopsis e <em>cultivar selezionate.</em></h2>
+            </div>
+            <p style="max-width:36ch;color:var(--inchiostro-soft);font-size:0.9375rem;margin:0;">
+                Orchidee in vaso, pronte da regalare. Variano per colore e numero di steli.
+            </p>
+        </header>
+
+        <div class="card-grid card-grid--catalog">
+            <article class="card">
+                <div class="card__media">
+                    <img class="card__img" src="/uploads/categories/orchidee/phalaenopsis_white_cultivar_2_jpg.jpg" alt="Orchidea Phalaenopsis bianca" loading="lazy">
+                </div>
+                <p class="card__eyebrow">Orchidee</p>
+                <h3 class="card__title">Phalaenopsis <em>bianca</em></h3>
+                <p class="card__summary">Uno o due steli, fiore bianco puro. Confezione neutra.</p>
+                <p class="card__price">da € 45,00</p>
+                <a class="card__cta" href="tel:+390312711360">Chiama per ordinare →</a>
+            </article>
+
+            <article class="card">
+                <div class="card__media">
+                    <img class="card__img" src="/uploads/categories/orchidee/phalaenopsis_white_cultivar_2_jpg.jpg" alt="Orchidea Phalaenopsis colorata" loading="lazy">
+                </div>
+                <p class="card__eyebrow">Orchidee</p>
+                <h3 class="card__title">Phalaenopsis <em>colorata</em></h3>
+                <p class="card__summary">Toni rosa, violetto, screziata. Disponibilità variabile.</p>
+                <p class="card__price">da € 48,00</p>
+                <a class="card__cta" href="tel:+390312711360">Chiama per ordinare →</a>
+            </article>
+
+            <article class="card">
+                <div class="card__media">
+                    <img class="card__img" src="/uploads/categories/orchidee/phalaenopsis_white_cultivar_2_jpg.jpg" alt="Composizione di orchidee in vaso" loading="lazy">
+                </div>
+                <p class="card__eyebrow">Orchidee · Su misura</p>
+                <h3 class="card__title">Composizione di <em>orchidee</em></h3>
+                <p class="card__summary">Piú piante in vaso unico, con muschio e legno naturale.</p>
+                <p class="card__price card__price--soft">su richiesta</p>
+                <a class="card__cta" href="/su-misura">Richiedi un preventivo →</a>
+            </article>
+        </div>
+    </div>
+</section>
+
+{# ---------- COMPOSIZIONI ---------- #}
+<section class="section" id="composizioni" aria-label="Composizioni">
+    <div class="container">
+        <header style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;margin-bottom:48px;flex-wrap:wrap;">
+            <div>
+                <span class="eyebrow eyebrow--muted">05 — Composizioni</span>
+                <h2 style="margin-top:14px;">Centrotavola, <em>omaggi, tributi.</em></h2>
+            </div>
+            <p style="max-width:36ch;color:var(--inchiostro-soft);font-size:0.9375rem;margin:0;">
+                Le composizioni vere sono sempre su misura. Qui un'idea della nostra mano.
+            </p>
+        </header>
+
+        <div class="card-grid card-grid--catalog">
+            <article class="card">
+                <div class="card__media">
+                    <img class="card__img" src="/uploads/categories/composizioni/severin_roesen___floral_arrangement_in_a_glass_vase_on_a_clo.jpg" alt="Composizione floreale ricca in vaso" loading="lazy">
+                </div>
+                <p class="card__eyebrow">Composizioni · Centrotavola</p>
+                <h3 class="card__title">Centrotavola <em>tonale</em></h3>
+                <p class="card__summary">Su misura per la tua tavola, scelto sui colori dell'arredo.</p>
+                <p class="card__price card__price--soft">su richiesta</p>
+                <a class="card__cta" href="/su-misura">Richiedi un preventivo →</a>
+            </article>
+
+            <article class="card">
+                <div class="card__media">
+                    <img class="card__img" src="/uploads/sumisura/eventi/dinner_table_accessories_jpg.jpg" alt="Composizione bassa per tavolo da cena" loading="lazy">
+                </div>
+                <p class="card__eyebrow">Composizioni · Cerimonie</p>
+                <h3 class="card__title">Composizione per <em>cerimonie</em></h3>
+                <p class="card__summary">Banchi, tavoli, ingressi. Ti seguiamo dall'idea alla consegna.</p>
+                <p class="card__price card__price--soft">su richiesta</p>
+                <a class="card__cta" href="/su-misura">Richiedi un preventivo →</a>
+            </article>
+
+            <article class="card">
+                <div class="card__media">
+                    <img class="card__img" src="/uploads/sumisura/funerali/city_of_london_cemetery_and_crematorium___floral_tribute___w.jpg" alt="Tributo floreale bianco" loading="lazy">
+                </div>
+                <p class="card__eyebrow">Composizioni · Tributi</p>
+                <h3 class="card__title">Tributi e <em>cordoglio</em></h3>
+                <p class="card__summary">Cuscini, corone, tributi. Consegna direttamente in chiesa o al commiato.</p>
+                <p class="card__price card__price--soft">su richiesta</p>
+                <a class="card__cta" href="/su-misura">Richiedi un preventivo →</a>
+            </article>
+        </div>
+    </div>
+</section>
+
+{# ---------- BOTTOM CTA BAND ---------- #}
+<section class="cta-band" aria-label="Composizioni su misura">
+    <div class="container">
+        <h2><em>Non trovi</em> quello che cerchi?</h2>
+        <p style="font-family:'Inter',sans-serif;font-size:1.0625rem;color:var(--calce);opacity:0.92;max-width:48ch;margin:0 auto 32px;">
+            Buona parte di quello che facciamo non sta in un catalogo. Raccontaci l'occasione — pensiamo noi al resto.
+        </p>
+        <a class="btn btn--ghost-light" href="/su-misura">Composizioni su misura →</a>
+    </div>
+</section>
+
+{% endblock %}
